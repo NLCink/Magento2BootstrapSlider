@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Stepzero.solutions. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Stepzerosolutions_Tbslider::szslidermenu" title="Bootstrap Slider" module="Stepzerosolutions_Tbslider" sortOrder="30" parent="Magento_Backend::content" resource="Stepzerosolutions_Tbslider::szslider"/>
+		
+		
+        <add id="Stepzerosolutions_Tbslider::slider" title="Slider" module="Stepzerosolutions_Tbslider" sortOrder="0" parent="Stepzerosolutions_Tbslider::szslidermenu" action="tbslider/slider" resource="Stepzerosolutions_Tbslider::slider"/>
+		
+		
+        <add id="Stepzerosolutions_Tbslider::slideritems" title="Slider Items" module="Stepzerosolutions_Tbslider" sortOrder="30" parent="Stepzerosolutions_Tbslider::szslidermenu" action="tbslider/slideritems" resource="Stepzerosolutions_Tbslider::slideritems"/>
+    </menu>
+</config>
